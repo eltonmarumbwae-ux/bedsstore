@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BedStore - Home</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="cart.js" defer></script>
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<header class="top-nav">
+  <div class="logo">🛏️ BedStore</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+  </nav>
+  <div class="icons">
+    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+  </div>
+</header>
+
+<!-- Hero Banner -->
+<section class="hero">
+  <h1>🔥 Big Bed Sale 🔥</h1>
+  <p>Save up to R4000 on selected bed sets</p>
+  <a href="shop.html" class="btn">Shop Now</a>
+</section>
+
+<!-- Categories -->
+<section class="categories">
+  <h2>Shop by Category</h2>
+  <div class="category-grid">
+    <a href="single-beds.html" class="category">Single Beds</a>
+    <a href="double-beds.html" class="category">Double Beds</a>
+    <a href="sets.html" class="category">Bed Sets</a>
+    <a href="headboards.html" class="category">Headboards</a>
+  </div>
+</section>
+
+<!-- Offers -->
+<section class="offers">
+  <h2>Special Offers</h2>
+  <div class="offer-grid">
+    <div class="offer">💥 Free Delivery on Selected Beds</div>
+    <div class="offer">🎁 Get Free Pillows with Every Purchase</div>
+  </div>
+</section>
+
+<!-- Best Sellers / Products -->
+<section class="products">
+  <h2>Best Sellers</h2>
+  <div class="product-grid">
+    <div class="product">
+      <img src="images/single-bed.jpg" alt="Single Bed">
+      <h3>Luxury Single Bed</h3>
+      <p>R2500</p>
+      <button onclick="addToCart({id:201,name:'Luxury Single Bed',price:2500})">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/double-bed.jpg" alt="Double Bed">
+      <h3>Comfort Double Bed</h3>
+      <p>R4500</p>
+      <button onclick="addToCart({id:202,name:'Comfort Double Bed',price:4500})">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/queen-bed.jpg" alt="Queen Bed">
+      <h3>Queen Bed</h3>
+      <p>R6000</p>
+      <button onclick="addToCart({id:203,name:'Queen Bed',price:6000})">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<footer id="footer"></footer>
+<script src="footer.js"></script>
+
+</body>
+</html>

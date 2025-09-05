@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment - BedStore</title>
+<link rel="stylesheet" href="styles.css">
+<script src="cart.js" defer></script>
+</head>
+<body>
+<header class="top-nav">
+  <div class="logo">🛏️ BedStore</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+  </nav>
+</header>
+
+<section class="form-section">
+  <h2>Payment Details</h2>
+  <form onsubmit="completeOrder(event)">
+    <label>Cardholder Name</label>
+    <input type="text" required>
+    <label>Card Number</label>
+    <input type="text" maxlength="16" placeholder="XXXX XXXX XXXX XXXX" required>
+    <label>Expiry Date</label>
+    <input type="month" required>
+    <label>CVV</label>
+    <input type="password" maxlength="3" required>
+    <button type="submit">Pay Now</button>
+  </form>
+</section>
+
+<footer id="footer"></footer>
+<script src="footer.js"></script>
+<script>
+function completeOrder(e) {
+  e.preventDefault();
+  localStorage.removeItem('cart');
+  window.location.href = 'confirmation.html';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Single Beds - BedStore</title>
+<link rel="stylesheet" href="styles.css">
+<script src="cart.js" defer></script>
+</head>
+<body>
+<header class="top-nav">
+  <div class="logo">🛏️ BedStore</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+  </nav>
+</header>
+
+<section class="products">
+  <h2>Single Beds</h2>
+  <div class="product-grid">
+    <div class="product">
+      <img src="images/single1.jpg" alt="Single Bed 1">
+      <h3>Luxury Single Bed</h3>
+      <p>R2500</p>
+      <button onclick="addToCart({id:101,name:'Luxury Single Bed',price:2500})">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/single2.jpg" alt="Single Bed 2">
+      <h3>Comfort Single Bed</h3>
+      <p>R2000</p>
+      <button onclick="addToCart({id:102,name:'Comfort Single Bed',price:2000})">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<footer id="footer"></footer>
+<script src="footer.js"></script>
+</body>
+</html>
